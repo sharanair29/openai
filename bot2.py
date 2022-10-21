@@ -10,7 +10,7 @@ completion = openai.Completion()
 
 start_sequence = "\nBot:"
 restart_sequence = "\n\nPerson:"
-session_prompt = "Hey there! I am AiVA."
+session_prompt = "Hey there! I am ..."
 
 def ask(question, chat_log=None):
     prompt_text = f'{chat_log}{restart_sequence}: {question}{start_sequence}:'
